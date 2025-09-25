@@ -1,0 +1,54 @@
+/* 自定义导航层级样式 */
+
+/* 修改导航项的缩进 */
+.md-nav__item--nested > .md-nav__link {
+  padding-left: 1.2rem;
+}
+
+.md-nav__item--nested .md-nav__item--nested > .md-nav__link {
+  padding-left: 2.4rem;
+}
+
+.md-nav__item--nested .md-nav__item--nested .md-nav__item--nested > .md-nav__link {
+  padding-left: 3.6rem;
+}
+
+/* 修改导航项的字体大小 */
+.md-nav__item--nested > .md-nav__link {
+  font-size: 0.9rem;
+}
+
+.md-nav__item--nested .md-nav__item--nested > .md-nav__link {
+  font-size: 0.85rem;
+}
+
+/* 修改导航项的图标 */
+.md-nav__item--nested > .md-nav__link::before {
+  content: "📁";
+  margin-right: 0.5rem;
+}
+
+.md-nav__item--nested .md-nav__item--nested > .md-nav__link::before {
+  content: "📄";
+  margin-right: 0.5rem;
+}
+
+/* 修改当前页面的样式 */
+.md-nav__item--active > .md-nav__link {
+  color: var(--md-primary-fg-color);
+  font-weight: bold;
+}
+
+/* 修改导航项的悬停效果 */
+.md-nav__item--nested > .md-nav__link:hover {
+  background-color: var(--md-accent-fg-color--transparent);
+}
+
+/* 修改导航分组标题的样式 */
+.md-nav__title {
+  font-weight: bold;
+  color: var(--md-primary-fg-color);
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
