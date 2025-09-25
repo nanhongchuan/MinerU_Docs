@@ -5,7 +5,6 @@
 </div>
 
 [![stars](https://img.shields.io/github/stars/opendatalab/MinerU.svg)](https://github.com/opendatalab/MinerU)
-[![PyPI version](https://img.shields.io/pypi/v/mineru)](https://pypi.org/project/mineru/)
 [![arXiv](https://img.shields.io/badge/arXiv-2409.18839-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.18839)
 
 ## 简介
@@ -18,32 +17,10 @@ MinerU 是一款高效的 PDF 文档提取工具，能够将文档转化为机�
 
 - 🌐 **[MinerU 官网](https://mineru.net/?source=github)** - 在线版，即开即用
 - 🤗 **[HuggingFace Demo](https://huggingface.co/spaces/opendatalab/MinerU)** - 在线体验
-- 🔬 **[ModelScope Demo](https://www.modelscope.cn/studios/OpenDataLab/MinerU)** - 模型社区体验
-- 📓 **[Google Colab](https://colab.research.google.com/gist/myhloli/a3cb16570ab3cfeadf9d8f0ac91b4fca/mineru_demo.ipynb)** - 在线代码体验
-
-## 本地安装
-
-```bash
-# 使用 pip 安装
-pip install --upgrade pip -i https://mirrors.aliyun.com/pypi/simple
-pip install uv -i https://mirrors.aliyun.com/pypi/simple
-uv pip install -U "mineru[core]" -i https://mirrors.aliyun.com/pypi/simple 
-
-# 或从源码安装
-git clone https://github.com/opendatalab/MinerU.git
-cd MinerU
-uv pip install -e .[core] -i https://mirrors.aliyun.com/pypi/simple
-```
-
-## 快速使用
-
-```bash
-mineru -p <input_path> -o <output_path>
-```
-
+- 🔬 **[Github 开源项目](https://mineru.net/)** - 项目源码
 ## 文档导航
 
-### 产品形态对比
+### 01. 产品形态对比
 
 |  | 网页端/桌面客户端 | 本地部署开源版 | 在线API服务 |
 |:---|:---|:---|:---|
@@ -52,7 +29,7 @@ mineru -p <input_path> -o <output_path>
 | **部署要求** | 无需部署，即开即用 | 需要Python/Docker环境 | 无需部署，网络调用 |
 | **定制能力** | 无 | 高(可修改源代码) | 中(API参数控制) |
 
-### 文档结构
+### 02. 文档结构
 
 - **[产品简介](docs/about/introduction.md)** - 了解MinerU的核心功能和特性
 - **[快速开始](docs/quick-start/)** - 快速上手MinerU
@@ -65,7 +42,7 @@ mineru -p <input_path> -o <output_path>
 - **[常见问题](docs/faq.md)** - FAQ和故障排除
 - **[联系我们](docs/contact.md)** - 获取帮助和支持
 
-## 主要功能
+## 03. 主要功能
 
 - **智能文档解析** - 输出符合人类阅读顺序的文本，适用于单栏、多栏及复杂排版
 - **结构保持** - 保留原文档的结构，包括标题、段落、列表等
@@ -79,20 +56,9 @@ mineru -p <input_path> -o <output_path>
 - **性能优化** - 支持纯CPU环境运行，并支持GPU(CUDA)/NPU(CANN)/MPS加速
 - **跨平台** - 兼容Windows、Linux和Mac平台
 
-## 系统要求
+## 04. 插件生态
 
-| 解析后端 | pipeline | vlm-transformers | vlm-sglang |
-|:---|:---|:---|:---|
-| **操作系统** | Linux/Windows/macOS | Linux/Windows | Linux/Windows (via WSL2) |
-| **CPU推理支持** | ✅ | ❌ | ❌ |
-| **GPU要求** | Turing及以后架构，6G显存以上或Apple Silicon | Turing及以后架构，8G显存以上 | Turing及以后架构，8G显存以上 |
-| **内存要求** | 最低16G以上，推荐32G以上 | 最低16G以上，推荐32G以上 | 最低16G以上，推荐32G以上 |
-| **磁盘空间** | 20G以上，推荐使用SSD | 20G以上，推荐使用SSD | 20G以上，推荐使用SSD |
-| **Python版本** | 3.10-3.13 | 3.10-3.13 | 3.10-3.13 |
-
-## 插件生态
-
-MinerU 支持多种插件和平台集成：
+MinerU 支持多种插件，多个产品平台也集成了MinerU相关接口：
 
 - **[Dify](docs/quick-start/plugins/dify.md)** - 与Dify平台集成
 - **[N8N](docs/quick-start/plugins/n8n.md)** - 与N8N工作流集成
@@ -100,13 +66,13 @@ MinerU 支持多种插件和平台集成：
 - **[Cherry Studio](docs/quick-start/plugins/cherry-studio.md)** - 与Cherry Studio集成
 - **[Sider](docs/quick-start/plugins/sider.md)** - 与Sider浏览器扩展集成
 
-## 社区与支持
+## 05.社区与支持
 
 ### 获取帮助
 - **[常见问题](docs/faq.md)** - 查看FAQ解决常见问题
 - **[DeepWiki](https://deepwiki.com/opendatalab/MinerU)** - AI助手在线答疑
-- **[Discord](https://discord.gg/Tdedn9GTXq)** - 加入Discord社区
 - **[微信群](https://mineru.net/community-portal/?aliasId=3c430f94)** - 加入微信交流群
+- **[Discord](https://discord.gg/Tdedn9GTXq)** - 加入Discord社区
 - **[邮箱支持](mailto:OpenDataLab@pjlab.org.cn)** - 邮件联系
 
 ### 贡献指南
@@ -116,12 +82,12 @@ MinerU 支持多种插件和平台集成：
 
 ## 许可证
 
-本项目采用开源许可证，详情请查看 [LICENSE](LICENSE) 文件。
+本项目采用Apache 2.0 开源许可证，详情请查看 [LICENSE](https://www.apache.org/licenses/LICENSE-2.0) 文件。
 
 ---
 
 <div align="center">
 
-**如果这个项目对您有帮助，请给我们一个Star！**
+**如果这个用户文档对您有帮助，请给我们一个Star！**
 
 </div>
