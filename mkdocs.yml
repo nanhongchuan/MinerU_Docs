@@ -70,8 +70,7 @@ copyright: © 2024 - 2025 MinerU. All Rights Reserved.
 
 nav:
   - '首页': 'index.md'
-  - '关于MinerU':
-    - '产品简介': 'about/introduction.md'
+  - '关于MinerU': 'about/introduction.md'
   - '版本更新说明':
     - '开源版本': 'release-notes/open-source.md'
     - 'Web/客户端': 'release-notes/web-client.md'
