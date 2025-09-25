@@ -110,12 +110,11 @@ nav:
   - '友情链接': 'links.md'
 
 plugins:
-  - search
   - mkdocs-video
 
 markdown_extensions:
   - admonition
-  - gfm_admonition
+  - pymdownx.blocks.admonition
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tasklist:
