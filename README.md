@@ -4,6 +4,9 @@
   <img src="https://opendatalab.github.io/MinerU/images/MinerU-logo.png" width="300px" alt="MinerU Logo">
 </div>
 
+
+
+
 [![stars](https://img.shields.io/github/stars/opendatalab/MinerU.svg)](https://github.com/opendatalab/MinerU)
 [![arXiv](https://img.shields.io/badge/arXiv-2409.18839-b31b1b.svg?logo=arXiv)](https://arxiv.org/abs/2409.18839)
 [![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/opendatalab/MinerU)
