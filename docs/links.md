@@ -37,7 +37,7 @@ Label LLM是一个开源的数据标注平台，致力于优化对于大型语�
 
 ## 04. 数据质量评估工具
 
-### OpenDataArena数据价值评估平台
+### OpenDataArena
 OpenDataArena数据价值评估平台是一个开源、透明、可扩展的平台，用于评估后训练数据集的价值，旨在使每个数据集可衡量、可比较和可验证。该项目致力于让每一份数据的价值可衡量、可比较、可验证，目前benchmark内容已经覆盖覆盖数学、代码、科学、通用任务等方向。
 
 ➡️ **访问链接**：[https://opendataarena.github.io/index.html](https://opendataarena.github.io/index.html)
