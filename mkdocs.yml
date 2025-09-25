@@ -1,0 +1,126 @@
+site_name: MinerU使用文档
+site_url: https://Natt-code216.github.io/MinerU_UM
+repo_name: Natt-code216/MinerU_UM
+repo_url: https://github.com/Natt-code216/MinerU_UM
+
+theme:
+  name: material
+  language: zh
+  logo: assets/images/logo.png
+  favicon: assets/images/logo.png
+  icon:
+    repo: fontawesome/brands/github
+
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+
+  features:
+    #- navigation.expand
+    - navigation.sections
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - navigation.tracking
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - toc.follow
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/opendatalab/MinerU
+      name: GitHub
+    - icon: fontawesome/brands/x-twitter
+      link: https://x.com/OpenDataLab_AI
+      name: X-Twitter
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/Tdedn9GTXq
+      name: Discord
+    - icon: fontawesome/brands/weixin
+      link: https://mineru.net/community-portal/?aliasId=3c430f94
+      name: WeChat
+    - icon: material/email
+      link: mailto:OpenDataLab@pjlab.org.cn
+      name: E-mail
+
+copyright: © 2024 - 2025 MinerU. All Rights Reserved.
+
+nav:
+  - '首页': 'index.md'
+  - '关于MinerU':
+    - '产品简介': 'about/introduction.md'
+  - '版本更新说明':
+    - '开源版本': 'release-notes/open-source.md'
+    - 'Web/客户端': 'release-notes/web-client.md'
+    - '在线API服务': 'release-notes/api-service.md'
+  - '快速开始':
+    - '本地部署': 'quick-start/local-deployment.md'
+    - 'Web/客户端': 'quick-start/web-client.md'
+    - '在线API服务': 'quick-start/api-service.md'
+    - '插件与生态':
+      - '本章概述': 'quick-start/plugins/index.md'
+      - 'Coze': 'quick-start/plugins/coze.md'
+      - 'Dify': 'quick-start/plugins/dify.md'
+      - 'N8N': 'quick-start/plugins/n8n.md'
+      - 'Cherry Studio': 'quick-start/plugins/cherry-studio.md'
+      - 'Sider': 'quick-start/plugins/sider.md'
+  - '使用指南':
+    - '本地部署':
+      - '概述': 'user-guides/local-deployment/index.md'
+      - '扩展模块安装': 'user-guides/local-deployment/extension-modules.md'
+      - '模型源': 'user-guides/local-deployment/model-source.md'
+      - '命令行工具': 'user-guides/local-deployment/cli-tools.md'
+      - '命令行进阶参数': 'user-guides/local-deployment/advanced-cli-parameters.md'
+      - 'Docker部署': 'user-guides/local-deployment/docker-deployment.md'
+      - '输出文件格式': 'user-guides/local-deployment/output-files.md'
+    - 'Web/客户端': 'user-guides/web-client.md'
+    - '在线API服务': 'user-guides/api-service.md'
+    - '插件与生态':
+      - '本章概述': 'user-guides/plugins/index.md'
+      - 'Coze': 'user-guides/plugins/coze.md'
+      - 'Dify': 'user-guides/plugins/dify.md'
+      - 'N8N': 'user-guides/plugins/n8n.md'
+      - 'Cherry Studio': 'user-guides//plugins/cherry-studio.md'
+      - 'Sider': 'user-guides//plugins/sider.md'
+  - '常见问题': 'faq.md'
+  - '联系我们': 'contact.md'
+  - '友情链接': 'links.md'
+
+plugins:
+  - search
+  - mkdocs-video
+
+markdown_extensions:
+  - admonition
+  - gfm_admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list
+  - pymdownx.extra
+  - pymdownx.highlight:
+      linenums: true
