@@ -1,131 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/contact/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/contact/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/faq/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/faq/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/links/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/links/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/about/introduction/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/about/introduction/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/quick-start/api-service/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/quick-start/api-service/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/quick-start/local-deployment/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/quick-start/local-deployment/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/quick-start/web-client/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/quick-start/web-client/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/quick-start/plugins/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/release-notes/api-service/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/quick-start/plugins/cherry-studio/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/release-notes/open-source/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/quick-start/plugins/coze/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/release-notes/web-client/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/quick-start/plugins/dify/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/api-service/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/quick-start/plugins/n8n/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/web-client/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/quick-start/plugins/sider/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/local-deployment/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/release-notes/api-service/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/local-deployment/advanced_cli_parameters/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/release-notes/open-source/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/local-deployment/cli-tools/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/release-notes/web-client/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/local-deployment/docker-deployment/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/api-service/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/local-deployment/extension-modules/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/web-client/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/local-deployment/model-source/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/local-deployment/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/local-deployment/output-files/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/local-deployment/advanced-cli-parameters/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/plugins/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/local-deployment/cli-tools/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/plugins/cherry-studio/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/local-deployment/docker-deployment/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/plugins/coze/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/local-deployment/extension-modules/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/plugins/dify/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/local-deployment/model-source/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/plugins/fasgpt/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/local-deployment/output-files/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/plugins/n8n/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
     <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/plugins/</loc>
-         <lastmod>2025-10-11</lastmod>
-    </url>
-    <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/plugins/cherry-studio/</loc>
-         <lastmod>2025-10-11</lastmod>
-    </url>
-    <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/plugins/coze/</loc>
-         <lastmod>2025-10-11</lastmod>
-    </url>
-    <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/plugins/dify/</loc>
-         <lastmod>2025-10-11</lastmod>
-    </url>
-    <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/plugins/n8n/</loc>
-         <lastmod>2025-10-11</lastmod>
-    </url>
-    <url>
-         <loc>https://nanhongchuan.github.io/MinerU_Docs/user-guides/plugins/sider/</loc>
-         <lastmod>2025-10-11</lastmod>
+         <loc>https://opendatalab.github.io/MinerU/user-guides/plugins/sider/</loc>
+         <lastmod>2025-10-12</lastmod>
     </url>
 </urlset>

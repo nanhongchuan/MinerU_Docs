@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://nanhongchuan.github.io/MinerU_Docs/quick-start/plugins/dify/">
+        <link rel="canonical" href="https://opendatalab.github.io/MinerU/user-guides/local-deployment/advanced_cli_parameters/">
       
       
-        <link rel="prev" href="../coze/">
+        <link rel="prev" href="../cli-tools/">
       
       
-        <link rel="next" href="../n8n/">
+        <link rel="next" href="../extension-modules/">
       
       
       <link rel="icon" href="../../../assets/images/logo.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Dify - MinerU使用文档</title>
+        <title>进阶优化参数 - MinerU 使用文档</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dify" class="md-skip">
+        <a href="#_1" class="md-skip">
           跳转至
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="MinerU使用文档" class="md-header__button md-logo" aria-label="MinerU使用文档" data-md-component="logo">
+    <a href="../../.." title="MinerU 使用文档" class="md-header__button md-logo" aria-label="MinerU 使用文档" data-md-component="logo">
       
   <img src="../../../assets/images/logo.png" alt="logo">
 
@@ -105,13 +105,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            MinerU使用文档
+            MinerU 使用文档
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Dify
+              进阶优化参数
             
           </span>
         </div>
@@ -161,13 +161,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://github.com/nanhongchuan/MinerU_Docs" title="前往仓库" class="md-source" data-md-component="source">
+        <a href="https://github.com/opendatalab/MinerU" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
-    nanhongchuan/MinerU_Docs
+    MinerU
   </div>
 </a>
       </div>
@@ -197,22 +197,22 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MinerU使用文档" class="md-nav__button md-logo" aria-label="MinerU使用文档" data-md-component="logo">
+    <a href="../../.." title="MinerU 使用文档" class="md-nav__button md-logo" aria-label="MinerU 使用文档" data-md-component="logo">
       
   <img src="../../../assets/images/logo.png" alt="logo">
 
     </a>
-    MinerU使用文档
+    MinerU 使用文档
   </label>
   
     <div class="md-nav__source">
-      <a href="https://github.com/nanhongchuan/MinerU_Docs" title="前往仓库" class="md-source" data-md-component="source">
+      <a href="https://github.com/opendatalab/MinerU" title="前往仓库" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
   </div>
   <div class="md-source__repository">
-    nanhongchuan/MinerU_Docs
+    MinerU
   </div>
 </a>
     </div>
@@ -253,7 +253,7 @@
   
   
   <span class="md-ellipsis">
-    关于MinerU
+    关于 MinerU
     
   </span>
   
@@ -372,7 +372,134 @@
   
   
   <span class="md-ellipsis">
-    在线API服务
+    在线 API 服务
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    快速开始
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            快速开始
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../quick-start/local-deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    本地部署
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../quick-start/web-client/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    网页/桌面客户端
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../quick-start/api-service/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    在线 API 服务
     
   </span>
   
@@ -422,15 +549,15 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
-    快速开始
+    使用指南
     
   </span>
   
@@ -438,10 +565,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            快速开始
+            使用指南
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -449,11 +576,45 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../local-deployment/" class="md-nav__link">
+  
+    
+    
+      
         
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
   
   
   <span class="md-ellipsis">
@@ -462,7 +623,282 @@
   </span>
   
 
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            本地部署
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../model-source/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    模型源配置
+    
+  </span>
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cli-tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    命令行工具
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    进阶优化参数
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    进阶优化参数
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vllm" class="md-nav__link">
+    <span class="md-ellipsis">
+      vllm 加速参数优化
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="vllm 加速参数优化">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      性能优化参数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      参数传递说明
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPU 设备选择与配置
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="GPU 设备选择与配置">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cuda_visible_devices" class="md-nav__link">
+    <span class="md-ellipsis">
+      CUDA_VISIBLE_DEVICES 基本用法
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      常见设备配置示例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      实际应用场景
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extension-modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    扩展模块安装
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../docker-deployment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Docker部署
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../output-files/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    输出文件格式
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -503,756 +939,7 @@
   
   
   <span class="md-ellipsis">
-    在线API服务
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" checked>
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    插件与生态
-    
-  </span>
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_4">
-            <span class="md-nav__icon md-icon"></span>
-            插件与生态
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../coze/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Coze
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-    
-  
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Dify
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    Dify
-    
-  </span>
-  
-
-      </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="目录">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      目录
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#mineru-dify-v040" class="md-nav__link">
-    <span class="md-ellipsis">
-      新版MinerU Dify插件亮点 (v0.4.0)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      实战演练：两个案例带你快速上手
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="实战演练：两个案例带你快速上手">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      准备
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#chat-pdf" class="md-nav__link">
-    <span class="md-ellipsis">
-      案例一：解析单文件，搭建Chat PDF应用
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="案例一：解析单文件，搭建Chat PDF应用">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#chatflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      创建空白应用，选择“Chatflow”
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      创建的初始模板中，选择“开始”节点
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mineru" class="md-nav__link">
-    <span class="md-ellipsis">
-      添加工具节点——MinerU插件来解析上一步开始节点上传的文件
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mineru-input_file" class="md-nav__link">
-    <span class="md-ellipsis">
-      设置MinerU的输入变量，选择上一步开始节点添加的 input_file
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#llm" class="md-nav__link">
-    <span class="md-ellipsis">
-      配置LLM模型
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      预览，上传文件并提问机器人关于文档的内容
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
-      发布与测试
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#s3" class="md-nav__link">
-    <span class="md-ellipsis">
-      案例二：自动化批量处理文档，并上传至云端S3
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="案例二：自动化批量处理文档，并上传至云端S3">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#botos3" class="md-nav__link">
-    <span class="md-ellipsis">
-      安装 botos3 插件
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#s3-bucket" class="md-nav__link">
-    <span class="md-ellipsis">
-      配置 S3 bucket
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      创建工作流
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      添加“迭代”
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mineru_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      增加中间节点“代码执行”来转换MinerU的解析结果
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#botos3_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      配置 Botos3 插件来上传内容
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      预览效果
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vis3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vis3查看文档
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../n8n/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    N8N
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../cherry-studio/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Cherry Studio
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sider/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Sider
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-        
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
-        
-          
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    使用指南
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
-            <span class="md-nav__icon md-icon"></span>
-            使用指南
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" >
-        
-          
-          <div class="md-nav__link md-nav__container">
-            <a href="../../../user-guides/local-deployment/" class="md-nav__link ">
-              
-  
-  
-  <span class="md-ellipsis">
-    本地部署
-    
-  </span>
-  
-
-            </a>
-            
-              
-              <label class="md-nav__link " for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
-                <span class="md-nav__icon md-icon"></span>
-              </label>
-            
-          </div>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5_1">
-            <span class="md-nav__icon md-icon"></span>
-            本地部署
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../user-guides/local-deployment/extension-modules/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    扩展模块安装
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../user-guides/local-deployment/model-source/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    模型源
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../user-guides/local-deployment/cli-tools/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    命令行工具
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../user-guides/local-deployment/advanced-cli-parameters/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    命令行进阶参数
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../user-guides/local-deployment/docker-deployment/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Docker部署
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../user-guides/local-deployment/output-files/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    输出文件格式
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../user-guides/web-client/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    网页/桌面客户端
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../user-guides/api-service/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    在线API服务
+    在线 API 服务
     
   </span>
   
@@ -1274,6 +961,8 @@
       
         
           
+        
+      
         
       
         
@@ -1300,7 +989,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../../user-guides/plugins/" class="md-nav__link ">
+            <a href="../../plugins/" class="md-nav__link ">
               
   
   
@@ -1335,76 +1024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-guides/plugins/coze/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Coze
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../user-guides/plugins/dify/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Dify
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../user-guides/plugins/n8n/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    N8N
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../user-guides/plugins/cherry-studio/" class="md-nav__link">
+      <a href="../../plugins/cherry-studio/" class="md-nav__link">
         
   
   
@@ -1427,12 +1047,104 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../user-guides/plugins/sider/" class="md-nav__link">
+      <a href="../../plugins/sider/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Sider
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugins/dify/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dify
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugins/n8n/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    N8N
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugins/coze/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Coze
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../plugins/fasgpt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FastGPT
     
   </span>
   
@@ -1551,47 +1263,19 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mineru-dify-v040" class="md-nav__link">
+  <a href="#vllm" class="md-nav__link">
     <span class="md-ellipsis">
-      新版MinerU Dify插件亮点 (v0.4.0)
+      vllm 加速参数优化
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      实战演练：两个案例带你快速上手
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="实战演练：两个案例带你快速上手">
+    <nav class="md-nav" aria-label="vllm 加速参数优化">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      准备
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#chat-pdf" class="md-nav__link">
-    <span class="md-ellipsis">
-      案例一：解析单文件，搭建Chat PDF应用
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="案例一：解析单文件，搭建Chat PDF应用">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#chatflow" class="md-nav__link">
-    <span class="md-ellipsis">
-      创建空白应用，选择“Chatflow”
+      性能优化参数
     </span>
   </a>
   
@@ -1600,34 +1284,31 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      创建的初始模板中，选择“开始”节点
+      参数传递说明
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#mineru" class="md-nav__link">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gpu" class="md-nav__link">
     <span class="md-ellipsis">
-      添加工具节点——MinerU插件来解析上一步开始节点上传的文件
+      GPU 设备选择与配置
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="GPU 设备选择与配置">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#mineru-input_file" class="md-nav__link">
+  <a href="#cuda_visible_devices" class="md-nav__link">
     <span class="md-ellipsis">
-      设置MinerU的输入变量，选择上一步开始节点添加的 input_file
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#llm" class="md-nav__link">
-    <span class="md-ellipsis">
-      配置LLM模型
+      CUDA_VISIBLE_DEVICES 基本用法
     </span>
   </a>
   
@@ -1636,115 +1317,23 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      预览，上传文件并提问机器人关于文档的内容
+      常见设备配置示例
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      发布与测试
+      实际应用场景
     </span>
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#s3" class="md-nav__link">
-    <span class="md-ellipsis">
-      案例二：自动化批量处理文档，并上传至云端S3
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="案例二：自动化批量处理文档，并上传至云端S3">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#botos3" class="md-nav__link">
-    <span class="md-ellipsis">
-      安装 botos3 插件
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#s3-bucket" class="md-nav__link">
-    <span class="md-ellipsis">
-      配置 S3 bucket
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
-    <span class="md-ellipsis">
-      创建工作流
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
-    <span class="md-ellipsis">
-      添加“迭代”
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#mineru_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      增加中间节点“代码执行”来转换MinerU的解析结果
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#botos3_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      配置 Botos3 插件来上传内容
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      预览效果
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vis3" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vis3查看文档
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1767,103 +1356,69 @@
   
 
 
-<div><h1 id="dify">Dify</h1>
-<p><strong>Dify</strong> 是一个开源的大语言模型（LLM）应用开发平台，旨在简化和加速生成式 AI 应用的创建和部署。它结合了后端即服务（BaaS）和 LLMOps 的理念，为开发者提供了用户友好的界面和强大的工具，使得即使是非技术人员也能轻松参与到 AI 应用的定义和数据运营中。为非技术用户提供零代码和低代码的开发方式，通过简单的配置和少量代码，快速构建和部署基于大语言模型的应用程序，降低了 AI 应用开发的门槛。</p>
-<p>目前MinerU 与 Dify 联合研发的 MinerU 插件已在 Dify 市场上架，帮助用户搭建工作流，提供文档解析的工作。</p>
-<p>使用请访问：https://dify.ai/zh</p>
-<h2 id="mineru-dify-v040"><strong>新版MinerU Dify插件亮点 (v0.4.0)</strong></h2>
+<div><h1 id="_1">命令行参数进阶</h1>
+<h2 id="vllm">vllm 加速参数优化</h2>
+<h3 id="_2">性能优化参数</h3>
+<blockquote>
+<p>[!TIP]
+如果您已经可以正常使用vllm对vlm模型进行加速推理，但仍然希望进一步提升推理速度，可以尝试以下参数：</p>
 <ul>
-<li><strong>完美适配MinerU2</strong>：全面兼容MinerU2的最新功能，释放顶尖的文档解析能力。</li>
-<li><strong>超高灵活性</strong>：同时支持官方在线API和本地化部署的API（并向下兼容 1.x 版本）。</li>
-<li><strong>赋能工作流</strong>：让Dify的Agent拥有强大的文档“读写”能力，轻松处理复杂任务。</li>
+<li>如果您有超过多张显卡，可以使用vllm的多卡并行模式来增加吞吐量：<code>--data-parallel-size 2</code></li>
 </ul>
-<p><img alt="img" src="../../../assets/images/Dify_1.png"></p>
-<h2 id="_1"><strong>实战演练：两个案例带你快速上手</strong></h2>
-<p>空谈不如实战。下面我们通过两个典型场景，向你展示新版插件的强大之处。</p>
-<h3 id="_2">准备</h3>
-<ol>
-<li>在Dify插件页面安装MinerU插件（私有化部署的Dify同理）</li>
-</ol>
-<p><img alt="img" src="../../../assets/images/Dify_2.png"></p>
-<ol>
-<li>填写API URL等信息</li>
-</ol>
-<p><img alt="img" src="../../../assets/images/Dify_3.png"></p>
-<p>使用官方API时令牌（Token）必须提供👆，使用本地部署API时令牌可不填写👇</p>
-<p><img alt="img" src="../../../assets/images/Dify_4.png"></p>
-<h3 id="chat-pdf"><strong>案例一：解析单文件，搭建Chat PDF应用</strong></h3>
-<p>想借助AI与你的文档对话吗？跟着下面几步，轻松实现</p>
-<h4 id="chatflow">创建空白应用，选择“Chatflow”</h4>
-<p>输入应用名称与描述</p>
-<p><img alt="img" src="../../../assets/images/Dify_5.png"></p>
-<h4 id="_3">创建的初始模板中，选择“开始”节点</h4>
-<p>字段类型选为单文件，填写变量名称（此处填为input_file）,支持文档类型选为文档与图片</p>
-<p><img alt="img" src="../../../assets/images/Dify_6.png"></p>
-<h4 id="mineru">添加工具节点——MinerU插件来解析上一步开始节点上传的文件</h4>
-<p><img alt="img" src="../../../assets/images/Dify_7.png"></p>
-<h4 id="mineru-input_file">设置MinerU的输入变量，选择上一步开始节点添加的 <code>input_file</code></h4>
-<p><img alt="img" src="../../../assets/images/Dify_8.png"></p>
-<h4 id="llm">配置LLM模型</h4>
-<p>选择“LLM”节点后，如果没有模型可用，需要单独在插件市场安装（这里使用 Deepseek作为示例）</p>
-<p>“上下文”选择MinerU的输出变量 <code>text</code>（MinerU解析文档后的markdown格式）</p>
-<p><img alt="img" src="../../../assets/images/Dify_9.png"></p>
-<p>在“SYSTEM”区域根据实际需求填写提示词，可如图填写“在Parse File <code>text</code>中提取用户的问题答案”</p>
-<p><img alt="img" src="../../../assets/images/Dify_10.png"></p>
-<h4 id="_4">预览，上传文件并提问机器人关于文档的内容</h4>
-<p>至此一个简单的文档问答应用Chat PDF搭建完成，点击“预览”，查看效果如何👇</p>
-<p><img alt="img" src="../../../assets/images/Dify_11.png"></p>
-<p>结果如下：</p>
-<p><img alt="img" src="../../../assets/images/Dify_12.png"></p>
-<h4 id="_5"><strong>发布与测试</strong></h4>
-<p>保存并发布你的应用。现在，上传一份PDF或图片，你就可以和它自由对话了！</p>
-<p><img alt="img" src="../../../assets/images/Dify_13.png"></p>
-<h3 id="s3"><strong>案例二：自动化批量处理文档，并上传至云端S3</strong></h3>
-<p>需要处理大量文档并归档？MinerU 插件同样能胜任</p>
-<h4 id="botos3">安装 botos3 插件</h4>
-<p><img alt="img" src="../../../assets/images/Dify_14.png"></p>
-<h4 id="s3-bucket">配置 S3 bucket</h4>
-<p><img alt="img" src="../../../assets/images/Dify_15.png"></p>
-<h4 id="_6">创建工作流</h4>
-<p>选择字段类型为“文件列表”，填写变量名称（此处填为input_files）,支持的文档类型选为文档与图片</p>
-<p><img alt="img" src="../../../assets/images/Dify_16.png"></p>
-<h4 id="_7">添加“迭代”</h4>
-<p>在“开始”节点后添加“迭代”，并配置迭代内的MinerU节点,设置迭代的输入为上一步开始节点的<code>upload_files</code>，输出节点暂时不填写，再整个迭代配置完成后选择MinerU节点Parse File的<code>full_zip_url</code></p>
-<p><img alt="img" src="../../../assets/images/Dify_17.png"></p>
-<p>将MinerU的输入参数file选择为迭代器的 <code>item</code></p>
-<p><img alt="img" src="../../../assets/images/Dify_18.png"></p>
-<p><img alt="img" src="../../../assets/images/Dify_19.png"></p>
-<h4 id="mineru_1">增加中间节点“代码执行”来转换MinerU的解析结果</h4>
-<p><strong>输入变量(变量名称需与代码定义一致)</strong></p>
+</blockquote>
+<h3 id="_3">参数传递说明</h3>
+<blockquote>
+<p>[!TIP]
+- 所有vllm官方支持的参数都可用通过命令行参数传递给 MinerU，包括以下命令:<code>mineru</code>、<code>mineru-vllm-server</code>、<code>mineru-gradio</code>、<code>mineru-api</code>
+- 如果您想了解更多有关<code>vllm</code>的参数使用方法，请参考 <a href="https://docs.vllm.ai/en/latest/cli/serve.html">vllm官方文档</a></p>
+</blockquote>
+<h2 id="gpu">GPU 设备选择与配置</h2>
+<h3 id="cuda_visible_devices">CUDA_VISIBLE_DEVICES 基本用法</h3>
+<blockquote>
+<p>[!TIP]
+- 任何情况下，您都可以通过在命令行的开头添加<code>CUDA_VISIBLE_DEVICES</code> 环境变量来指定可见的 GPU 设备：
+  </p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>mineru<span class="w"> </span>-p<span class="w"> </span>&lt;input_path&gt;<span class="w"> </span>-o<span class="w"> </span>&lt;output_path&gt;
+</code></pre></div></td></tr></table></div>
+- 这种指定方式对所有的命令行调用都有效，包括 <code>mineru</code>、<code>mineru-vllm-server</code>、<code>mineru-gradio</code> 和 <code>mineru-api</code>，且对<code>pipeline</code>、<code>vlm</code>后端均适用。
+</blockquote>
+<h3 id="_4">常见设备配置示例</h3>
+<blockquote>
+<p>[!TIP]
+以下是一些常见的 <code>CUDA_VISIBLE_DEVICES</code> 设置示例：
+  </p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">1</span><span class="w">  </span><span class="c1"># Only device 1 will be seen</span>
+<span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">0</span>,1<span class="w">  </span><span class="c1"># Devices 0 and 1 will be visible</span>
+<span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="s2">"0,1"</span><span class="w">  </span><span class="c1"># Same as above, quotation marks are optional</span>
+<span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">0</span>,2,3<span class="w">  </span><span class="c1"># Devices 0, 2, 3 will be visible; device 1 is masked</span>
+<span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="s2">""</span><span class="w">  </span><span class="c1"># No GPU will be visible</span>
+</code></pre></div></td></tr></table></div>
+</blockquote>
+<h2 id="_5">实际应用场景</h2>
+<blockquote>
+<p>[!TIP]
+以下是一些可能的使用场景：</p>
 <ul>
-<li><strong>text：</strong>选择MinerU Parse File的输出变量<code>text</code></li>
-<li><strong>uploadFiles：</strong>选择“开始”节点的文件列表<code>upload_files</code>，用来根据迭代的index索引下标找到对应的原始文件名</li>
-<li><strong>index：</strong>迭代的下标索引，选择迭代器的<code>index</code></li>
+<li>
+<p>如果您有多张显卡，需要指定卡0和卡1，并使用多卡并行来启动<code>vllm-server</code>，可以使用以下命令： 
+  </p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">0</span>,1<span class="w"> </span>mineru-vllm-server<span class="w"> </span>--port<span class="w"> </span><span class="m">30000</span><span class="w"> </span>--data-parallel-size<span class="w"> </span><span class="m">2</span>
+</code></pre></div></td></tr></table></div>
+</li>
+<li>
+<p>如果您有多张显卡，需要在卡0和卡1上启动两个<code>fastapi</code>服务，并分别监听不同的端口，可以使用以下命令： 
+  </p><div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="c1"># 在终端1中</span>
+<span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">0</span><span class="w"> </span>mineru-api<span class="w"> </span>--host<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>--port<span class="w"> </span><span class="m">8000</span>
+<span class="c1"># 在终端2中</span>
+<span class="nv">CUDA_VISIBLE_DEVICES</span><span class="o">=</span><span class="m">1</span><span class="w"> </span>mineru-api<span class="w"> </span>--host<span class="w"> </span><span class="m">127</span>.0.0.1<span class="w"> </span>--port<span class="w"> </span><span class="m">8001</span>
+</code></pre></div></td></tr></table></div>
+</li>
 </ul>
-<p><strong>输出变量(变量名称需与代码定义一致)</strong></p>
-<ul>
-<li><strong>fileName：</strong>String</li>
-<li><strong>base64：</strong>String</li>
-</ul>
-<p><img alt="img" src="../../../assets/images/Dify_20.png"></p>
-<p>代码选择JavaScript，编写转换代码：</p>
-<p>暂时无法在飞书文档外展示此内容</p>
-<p>以下为Python版本：</p>
-<p>暂时无法在飞书文档外展示此内容</p>
-<h4 id="botos3_1">配置 Botos3 插件来上传内容</h4>
-<p>添加工具节点Botos3，选择“通过s3上传base64”</p>
-<p><img alt="img" src="../../../assets/images/Dify_21.png"></p>
-<p>文件base64选择代码执行（图中为<strong>转换MINERU MD文本</strong>）输出的base64字段</p>
-<p><img alt="img" src="../../../assets/images/Dify_22.png"></p>
-<p>S3对象key，S3 对象key填写文件存储的路径，在 botos3 插件配置界面已经填写了 bucket 名称，这里只需要填写在bucket下存储的目录即可。选择代码执行<strong>（图中为转换MINERU MD文本）</strong>的<code>fileName</code></p>
-<p><img alt="img" src="../../../assets/images/Dify_23.png"></p>
-<h4 id="_8">预览效果</h4>
-<p>连接结束节点，至此，一个简单的上传到s3的工作流配置完成，点击“运行”看看效果👇：</p>
-<p><img alt="img" src="../../../assets/images/Dify_24.png"></p>
-<p><img alt="img" src="../../../assets/images/Dify_25.png"></p>
-<h4 id="vis3">Vis3查看文档</h4>
-<p>运行结束，可通过<a href="https://github.com/opendatalab/Vis3?tab=readme-ov-file#features">vis3</a>来查看S3桶内是否已上传解析后的md文件，Vis3使用可参考</p>
-<p><a href="https://mp.weixin.qq.com/s/p3rH4EaoJB-AK7RWeDvOhg">新工具开源！Vis3大模型数据可视化利器：填 AK/SK 直接预览 S3 数据，JSON/视频/图片秒开！本地文件也可用</a></p>
-<p><img alt="img" src="../../../assets/images/Dify_26.png"></p></div>
+</blockquote></div>
 
 
 
