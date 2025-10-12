@@ -1,19 +1,24 @@
 # Dify
-**Dify** 是一个开源的大语言模型（LLM）应用开发平台，旨在简化和加速生成式 AI 应用的创建和部署。它结合了后端即服务（BaaS）和 LLMOps 的理念，为开发者提供了用户友好的界面和强大的工具，使得即使是非技术人员也能轻松参与到 AI 应用的定义和数据运营中。为非技术用户提供零代码和低代码的开发方式，通过简单的配置和少量代码，快速构建和部署基于大语言模型的应用程序，降低了 AI 应用开发的门槛。
 
-目前MinerU 与 Dify 联合研发的 MinerU 插件已在 Dify 市场上架，帮助用户搭建工作流，提供文档解析的工作。
+**Dify** 是一个开源的大语言模型（LLM）应用开发平台，旨在简化和加速生成式 AI 应用的创建和部署。它结合了后端即服务（BaaS）和 LLMOps 的理念，为开发者提供了用户友好的界面和强大的工具，有效降低了 AI 应用开发的门槛。
 
-使用请访问：https://dify.ai/zh
+目前 MinerU 与 Dify 联合研发的 MinerU 插件已在 Dify 市场上架，帮助用户搭建工作流，提供文档解析的工作。
 
-# 一、**新版MinerU Dify插件亮点 (v0.4.0)**
+![img](../../assets/images/Dify_2.png)
+
+- Dify 官网地址：https://dify.ai/zh
+- MinerU Dify 插件下载地址：https://marketplace.dify.ai/plugins/langgenius/mineru
+
+# 使用教程
+
+## 一、**新版MinerU Dify插件亮点 (v0.4.0)**
 
 - **完美适配MinerU2**：全面兼容MinerU2的最新功能，释放顶尖的文档解析能力。
 - **超高灵活性**：同时支持官方在线API和本地化部署的API（并向下兼容 1.x 版本）。
 - **赋能工作流**：让Dify的Agent拥有强大的文档“读写”能力，轻松处理复杂任务。
 
-![img](../../assets/images/Dify_1.png)
 
-# **二、实战演练：两个案例带你快速上手**
+## **二、实战演练：两个案例带你快速上手**
 
 空谈不如实战。下面我们通过两个典型场景，向你展示新版插件的强大之处。
 
@@ -21,9 +26,8 @@
 
 1. 在Dify插件页面安装MinerU插件（私有化部署的Dify同理）
 
-![img](../../assets/images/Dify_2.png)
 
-1. 填写API URL等信息
+2. 填写API URL等信息
 
 ![img](../../assets/images/Dify_3.png)
 

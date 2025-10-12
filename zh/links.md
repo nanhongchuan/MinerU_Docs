@@ -1,5 +1,4 @@
-# 友情链接与生态伙伴
-
+# 友情链接
 
 ## 01. OpenDataLab
 > OpenDataLab 团队,致力于构建 AI 开放数据生态，推动数据要素对大模型领域全面赋能
@@ -8,7 +7,6 @@ OpenDataLab 是上海人工智能实验室大模型数据基座团队打造的�
 
 ➡️ **访问链接**：[https://opendatalab.com/](https://opendatalab.com/)
 
----
 
 ## 02. MinerU.Chem
 > 专业的化学文档解析工具
@@ -17,7 +15,6 @@ MinerU.Chem是OpenDataLab团队基于MinerU核心能力，针对化学科研场�
 
 ➡️ **访问链接**：[https://mineru.net/chem/](https://mineru.net/chem/)
 
----
 
 ## 03. 数据标注工具
 
@@ -26,14 +23,11 @@ Label U是一款综合性的数据标注平台，专为处理多模态数据而�
 
 ➡️  **GitHub 仓库**：https://github.com/opendatalab/labelU
 
-
-
 ### Label LLM
 Label LLM是一个开源的数据标注平台，致力于优化对于大型语言模型（LLM）开发不可或缺的数据标注过程。Label LLM的设计理念旨在成为独立开发者和中小型研究团队提高标注效率的有力工具。它的核心在于通过提供全面的任务管理解决方案和多样化的多模态数据支持，简化并增强模型训练的数据注释过程的效率。
 
 ➡️ **Label LLM GitHub 仓库**：https://github.com/opendatalab/LabelLLM
 
----
 
 ## 04. 数据质量评估工具
 
@@ -57,4 +51,8 @@ Dingo是一款数据质量评估工具，帮助你自动化检测数据集中的
 
 ➡️ **GitHub 仓库**：[https://github.com/opendatalab/Vis3/tree/main](https://github.com/opendatalab/Vis3/tree/main) 
 
----
+## 06. MinerU 精选开源插件集
+
+基于 MinerU 核心功能，我们研发了支持各类 AI 产品的系列插件，为用户提供更便捷的跨平台使用体验。
+
+➡️ **GitHub 仓库**：[https://github.com/opendatalab/awesome-mineru/tree/main](https://github.com/opendatalab/awesome-mineru/tree/main)

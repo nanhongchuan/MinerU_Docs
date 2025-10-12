@@ -1,9 +1,0 @@
-{
-    "git.decorations.enabled": false,
-    "git.showGitStatus": false,
-    "scm.diffDecorations": "none",
-    "git.decorations.colors": false,
-    "git.decorations.badges": false
-}
-
-

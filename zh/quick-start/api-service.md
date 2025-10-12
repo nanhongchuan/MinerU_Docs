@@ -23,14 +23,14 @@ MinerU在线API目前处于试运行阶段，用户需提交申请并通过审�
 
 #### **重要安全提示**
 
-- ⏳ 为保证用户账号安全，目前所有在线API Tokens默认有效期为 14天，请在过期前创建新的Token并更新您的应用程序配置。
+- ⏳ 为保证用户账号安全，目前所有在线 API Tokens 默认有效期为 14 天，请在过期前创建新的Token并更新您的应用程序配置。
 - ℹ️ API当前处于试运行测试阶段，如有任何问题或疑问，欢迎通过运营渠道反馈。
 
 ## **调用API**
 
-获得Token后，您就可以使用它来调用MinerU API了。
+获得 Token 后，您就可以使用它来调用 MinerU API了。
 
-- **API**端点 (Endpoint)**: `https://api.mineru.com/v4/parse` (请注意：原v2、v3版本API已停用，请务必使用新域名下的v4版API)
+- **API** 端点 (Endpoint): `https://api.mineru.com/v4/parse` (请注意：原v2、v3版本API已停用，请务必使用新域名下的v4版API)
 
 - **认证方式**: 在HTTP请求头（Header）中携带您的Token。
 

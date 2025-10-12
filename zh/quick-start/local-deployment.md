@@ -7,14 +7,14 @@
 >
 > 通过集中资源和精力于主线环境，我们团队能够更高效地解决潜在的BUG，及时开发新功能。
 >
-> 在非主线环境中，由于硬件、软件配置的多样性，以及第三方依赖项的兼容性问题，我们无法100%保证项目的完全可用性。因此，对于希望在非推荐环境中使用本项目的用户，我们建议先仔细阅读文档以及FAQ，大多数问题已经在FAQ中有对应的解决方案，除此之外我们鼓励社区反馈问题，以便我们能够逐步扩大支持范围。
+> 在非主线环境中，由于硬件、软件配置的多样性，以及第三方依赖项的兼容性问题，我们无法100%保证项目的完全可用性。因此，对于希望在非推荐环境中使用本项目的用户，我们建议**先仔细阅读文档以及FAQ**，大多数问题已经在FAQ中有对应的解决方案，除此之外我们鼓励社区反馈问题，以便我们能够逐步扩大支持范围。
 
-<table border="1">
+<table>
     <tr>
         <td>解析后端</td>
         <td>pipeline</td>
         <td>vlm-transformers</td>
-        <td>vlm-sglang</td>
+        <td>vlm-vllm</td>
     </tr>
     <tr>
         <td>操作系统</td>
@@ -46,39 +46,48 @@
     </tr>
 </table>
 
-### 安装 MinerU
+### 一、安装 MinerU
 
-#### 使用pip或uv安装MinerU
+MinerU开源项目支持以下多种安装方式，您可根据实际需求选择适合的安装形式。在安装开始前，**请务确保系统符合前文表格中所描述的要求。**
+
+
+
+#### 1.1.使用pip或uv安装MinerU
 ```bash
 pip install --upgrade pip -i https://mirrors.aliyun.com/pypi/simple
+
 pip install uv -i https://mirrors.aliyun.com/pypi/simple
+
 uv pip install -U "mineru[core]" -i https://mirrors.aliyun.com/pypi/simple 
 ```
 
-#### 通过源码安装MinerU
+#### 1.2.通过源码安装MinerU
 ```bash
 git clone https://github.com/opendatalab/MinerU.git
+
 cd MinerU
+
 uv pip install -e .[core] -i https://mirrors.aliyun.com/pypi/simple
 ```
 
 > [!TIP]
-> `mineru[core]`包含除`sglang`加速外的所有核心功能，兼容Windows / Linux / macOS系统，适合绝大多数用户。
-> 如果您有使用`sglang`加速VLM模型推理，或是在边缘设备安装轻量版client端等需求，可以参考文档[扩展模块安装指南](../user-guides/local-deployment/extension-modules.md)。
+> `mineru[core]`包含除`vLLM`加速外的所有核心功能，兼容Windows / Linux / macOS系统，适合绝大多数用户。
+> 如果您有使用`vLLM`加速VLM模型推理，或是在边缘设备安装轻量版client端等需求，可以参考文档[扩展模块安装指南](https://opendatalab.github.io/MinerU/zh/quick_start/extension_modules/)。
 
 ---
  
-#### 使用docker部署Mineru
+#### 1.3.使用docker部署Mineru
 MinerU提供了便捷的docker部署方式，这有助于快速搭建环境并解决一些棘手的环境兼容问题。
-您可以在文档中获取[Docker部署说明](../user-guides/local-deployment/docker-deployment.md)。
+您可以在文档中获取[Docker部署说明](https://opendatalab.github.io/MinerU/zh/quick_start/docker_deployment/)。
 
 ---
 
-### 使用 MinerU
+### 二、使用 MinerU
 
-最简单的命令行调用方式:
+#### 2.1.简单的命令行调用
 ```bash
 mineru -p <input_path> -o <output_path>
 ```
 
-您可以通过命令行、API、WebUI等多种方式使用MinerU进行PDF解析，具体使用方法请参考[使用指南](../user-guides/local-deployment/index.md)。
+#### 2.2.复杂调用
+您可以通过命令行、API、WebUI等多种方式使用MinerU进行PDF解析，具体使用方法请参考[使用指南](https://opendatalab.github.io/MinerU/zh/usage/)。

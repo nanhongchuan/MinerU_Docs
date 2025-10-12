@@ -6,7 +6,7 @@ Cherry Studio 是一款功能强大的多模型 AI 客户端软件，支持 Wind
 
 ![img](../../assets/images/Cherry_Studio_1.png)
 
-Cherry Studio下载链接：https://www.cherry-ai.com/
+- Cherry Studio 官网地址：https://www.cherry-ai.com/
 
 # 使用方法
 

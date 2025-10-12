@@ -3,7 +3,14 @@
 
 目前，MinerU 已将其强大的文档解析能力封装为 n8n 节点，用户在搭建工作流时，可以更加便捷地处理复杂的文档解析任务。
 
-使用请访问：https://n8n.io/
+![img](../../assets/images/n8n_0.png)
+
+
+
+- n8n 官网地址：https://n8n.io/
+- MinerU n8n 插件下载地址：https://www.npmjs.com/package/n8n-nodes-mineru
+
+# 使用教程
 
 ## step1 进入社区node安装界面
 
@@ -11,7 +18,7 @@
 
 ## step2 安装 n8n-nodes-mineru 节点
 
-![img](../../assets/images/n8n_2.png)
+≈assets/images/n8n_2.png)
 
 ## step3 新建工作流，添加 n8n-nodes-mineru 节点，并设置 api key
 
