@@ -1,6 +1,6 @@
 # 欢迎来到 MinerU 用户手册
 
- <div align="center" xmlns="http://www.w3.org/1999/html">
+<div align="center" xmlns="http://www.w3.org/1999/html">
 <!-- logo -->
 <p align="center">
   <img src="https://opendatalab.github.io/MinerU/images/MinerU-logo.png" width="300px" style="vertical-align:middle;">
@@ -31,12 +31,11 @@
 
 -   __MinerU 是什么？__
 
-    ---
+    
     MinerU 是 AI 大模型时代的文档解析引擎，能够将 PDF 等格式文档高保真地转换为 Markdown 等结构化的可读格式，精准提取文本、表格、公式、代码及化学符号。MinerU 的代码与模型已在 GitHub 和 HuggingFace 平台开源，并提供网页端、桌面客户端、在线 API 等多种在线服务。[了解更多](about/introduction.md)
 
--   __MinerU 主要功能__
 
-    ---
+-   __MinerU 主要功能__
 
     - 输出符合人类阅读顺序的文本，适用于单栏、多栏及复杂排版
     - 保留原文档的结构，包括标题、段落、列表等
@@ -53,23 +52,17 @@
 
 -   __一、快速开始__
 
-    ---
-
     - [本地部署](quick-start/local-deployment.md)
     - [网页端/桌面客户端/在线demo](quick-start/web-client.md)
     - [在线 API 服务](quick-start/api-service.md)
 
 -   __二、版本更新说明__
 
-    ---
-
     - [开源版本](release-notes/open-source.md)
     - [网页端/桌面客户端/在线demo](release-notes/web-client.md)
     - [在线 API 服务](release-notes/api-service.md)
 
 -   __三、使用指南__
-
-    ---
     
     - **本地部署**
         - [多种使用方式](user-guides/local-deployment/index.md)
@@ -93,8 +86,6 @@
 
 -   __四、其他信息__
 
-    ---
-
     - [常见问题](faq.md)
     - [联系我们](contact.md)
     - [友情链接](links.md)
@@ -103,9 +94,6 @@
 
 
 -   __五、社区与支持__
-
-    ---
-
 
 !!! question "遇到问题？"
 
