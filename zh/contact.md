@@ -6,7 +6,7 @@
 
 ## 官方邮箱
 
-MinerU 官方邮箱：OpenDataLab@pjlab.org.cn
+MinerU 官方邮箱：[opendatalab@pjlab.org.cn](mailto:opendatalab@pjlab.org.cn)
 
 ## 微信社群 
 
