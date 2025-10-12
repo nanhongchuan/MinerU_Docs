@@ -83,7 +83,7 @@ nav:
     - '在线 API 服务': 'release-notes/api-service.md'
   - '快速开始':
     - '本地部署': 'quick-start/local-deployment.md'
-    - '网页/桌面客户端': 'quick-start/web-client.md'
+    - '网页端/桌面客户端': 'quick-start/web-client.md'
     - '在线 API 服务': 'quick-start/api-service.md'
   - '使用指南':
     - '本地部署':
