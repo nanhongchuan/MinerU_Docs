@@ -1,4 +1,3 @@
-
 # 欢迎来到 MinerU 用户手册
 
   <div align="center" xmlns="http://www.w3.org/1999/html">
@@ -78,10 +77,11 @@
     ---
     
     - **本地部署**
-        - [概述](user-guides/local-deployment/index.md)
-        - [扩展模块安装](user-guides/local-deployment/extension-modules.md)
-        - [模型源](user-guides/local-deployment/model-source.md)
+        - [多种使用方式](user-guides/local-deployment/index.md)
+        - [模型源配置](user-guides/local-deployment/model-source.md)
         - [命令行工具](user-guides/local-deployment/cli-tools.md)
+        - [进阶优化参数](user-guides/local-deployment/advanced_cli_parameters.md)
+        - [扩展模块安装](user-guides/local-deployment/extension-modules.md)
         - [Docker部署](user-guides/local-deployment/docker-deployment.md)
         - [输出文件格式](user-guides/local-deployment/output-files.md)
     - [网页端/桌面客户端](user-guides/web-client.md)
